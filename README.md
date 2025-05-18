@@ -1,7 +1,7 @@
 # mqtt-server
 Petit script pour monter très facilement un service de broker MQTT
 
-zf250517.2244, zf250518.1722
+zf250517.2244, zf250518.1732
 
 # Buts
 
@@ -11,7 +11,7 @@ Installer très facilement une ou plusieurs instances de broker MQTT
 # Problématiques
 
 Quand on veut bien séparer différents services IoT, on a besoin de plusieurs instance broker MQTT.<br>
-Le problème c'est que les adresses ip4 sont rares et chères, le plus simpe donc est de 'containeriser' les instances MQTT et jouer sur les différents ports.
+Le problème c'est que les adresses ip4 sont rares et chères, le plus simpe donc est de 'containériser' les instances MQTT et jouer sur les différents ports.
 
 
 # Moyens
@@ -29,7 +29,7 @@ Il suffit juste d'installer Docker et sa suite avec:
 
 # Utilisation
 
-Pour chaque instances il faut aller dans le dossier de l'instance et de faire:
+Pour chaque instances il faut aller dans le dossier de l'instance et faire:
 
 ## Pour démarrer l'instance
 
@@ -51,7 +51,8 @@ Pour chaque instances il faut aller dans le dossier de l'instance et de faire:
 
 ## Pour afficher les logs
 
-```./show_logs.sh
+```
+./show_logs.sh
 ```
 
 ## Pour tout effacer ce qui ne tourne pas
