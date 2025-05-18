@@ -3,12 +3,12 @@
 #version: "3.7"
 services:
   # mqtt5 eclipse-mosquitto
-  mqtt-1:
+  mqtt-2:
     image: eclipse-mosquitto
-    container_name: mqtt-1
+    container_name: mqtt-2
     ports:
-      - "18883:1883" #default mqtt port
-      - "19001:9001" #default mqtt port for websockets
+      - "18884:1883" #default mqtt port
+      - "19002:9001" #default mqtt port for websockets
     volumes:
       - ./config:/mosquitto/config:rw
       - ./data:/mosquitto/data:rw
@@ -23,4 +23,4 @@ volumes:
 
 networks:
   default:
-    name: mqtt-1-network
+    name: mqtt-2-network
