@@ -12,7 +12,7 @@ sudo usermod -aG mqtt ubuntu
 sudo touch ./config/pwfile
 sudo chmod 0700 ./config/pwfile
 
-docker compose up
+docker compose up -d
 
 echo -e "
 
